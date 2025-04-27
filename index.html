@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curhat Anonim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop id="bgMusic">
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="parallax"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Curhat Anonim</h1>
+      <button id="darkToggle">Ganti Tema</button>
+    </div>
+
+    <form id="curhatForm">
+      <select id="kategori">
+        <option value="Umum">Pilih Kategori</option>
+        <option value="Cinta">Cinta</option>
+        <option value="Persahabatan">Persahabatan</option>
+        <option value="Keluarga">Keluarga</option>
+        <option value="Sekolah">Sekolah</option>
+        <option value="Lainnya">Lainnya</option>
+      </select>
+      <textarea id="curhatInput" placeholder="Tulis curhatanmu..." required></textarea>
+      <button type="submit">Kirim Curhat</button>
+    </form>
+
+    <div class="curhat-list" id="curhatList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
